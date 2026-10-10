@@ -17,5 +17,3 @@ def pick_llm(level: str):
         raise ValueError(f"Unsupported level: {level}")
 
     return llm
-
-llm_obj = pick_llm
