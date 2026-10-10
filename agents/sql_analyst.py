@@ -24,7 +24,7 @@ def prompt_query_context(state: AgentSchema) -> AgentSchema:
         'port': int(os.getenv('port')),
         'user': os.getenv('user'),
         'password': os.getenv('password'),
-        'dbname': os.getenv('dbname')
+        'dbname': os.getenv('database')
     })
 
     schema_info = db_obj.schema_details("public")
